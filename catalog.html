@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — Martelle</title>
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top announcement bar -->
+    <div class="announcement">
+        <p>Бесплатная доставка при заказе от 5000 ₽ — Возврат в течение 30 дней</p>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container header__inner">
+            <button class="header__burger" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav nav--left">
+                <a href="catalog.html">Магазин</a>
+                <a href="index.html#collections">Коллекции</a>
+                <a href="index.html#about">О нас</a>
+            </nav>
+
+            <a href="index.html" class="logo">MARTELLE</a>
+
+            <nav class="nav nav--right">
+                <a href="#search" aria-label="Поиск">Поиск</a>
+                <a href="#account" aria-label="Аккаунт">Аккаунт</a>
+                <a href="#cart" class="nav__cart" aria-label="Корзина">Корзина (0)</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Catalog page header -->
+        <section class="catalog-head">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                    <a href="index.html">Главная</a>
+                    <span>/</span>
+                    <span>Каталог</span>
+                </nav>
+                <h1 class="catalog-head__title">Каталог</h1>
+                <p class="catalog-head__count" id="catalogCount">8 товаров</p>
+            </div>
+        </section>
+
+        <!-- Catalog -->
+        <section class="catalog">
+            <div class="container">
+                <!-- Filters / sorting bar -->
+                <div class="catalog__bar">
+                    <div class="catalog__filters">
+                        <button class="chip chip--active" data-filter="all">Все</button>
+                        <button class="chip" data-filter="women">Женское</button>
+                        <button class="chip" data-filter="men">Мужское</button>
+                        <button class="chip" data-filter="accessories">Аксессуары</button>
+                    </div>
+                    <label class="catalog__sort">
+                        <span>Сортировка:</span>
+                        <select aria-label="Сортировка">
+                            <option>По популярности</option>
+                            <option>Сначала дешевле</option>
+                            <option>Сначала дороже</option>
+                            <option>Новинки</option>
+                        </select>
+                    </label>
+                </div>
+
+                <!-- Product grid -->
+                <div class="catalog__grid" id="catalogGrid">
+                    <article class="product-card" data-category="women">
+                        <a href="#" class="product-card__media">
+                            <img src="image/пальто.webp" alt="Пальто Oversize" class="media-img media-img--square">
+                            <span class="product-card__badge">New</span>
+                        </a>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Пальто Oversize</h3>
+                            <p class="product-card__price">12 900 ₽</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="men">
+                        <a href="#" class="product-card__media">
+                            <img src="image/костюм.webp" alt="Хлопковая рубашка" class="media-img media-img--square">
+                        </a>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Хлопковая рубашка</h3>
+                            <p class="product-card__price">4 500 ₽</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="men">
+                        <a href="#" class="product-card__media">
+                            <img src="image/мужское.webp" alt="Брюки прямые" class="media-img media-img--square">
+                            <span class="product-card__badge product-card__badge--sale">-20%</span>
+                        </a>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Брюки прямые</h3>
+                            <p class="product-card__price">6 200 ₽</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="women">
+                        <a href="#" class="product-card__media">
+                            <img src="image/свитер.webp" alt="Трикотажный свитер" class="media-img media-img--square">
+                        </a>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Трикотажный свитер</h3>
+                            <p class="product-card__price">7 800 ₽</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="women">
+                        <a href="#" class="product-card__media">
+                            <img src="image/женское.webp" alt="Льняное платье" class="media-img media-img--square">
+                        </a>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Льняное платье</h3>
+                            <p class="product-card__price">8 400 ₽</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="accessories">
+                        <a href="#" class="product-card__media">
+                            <img src="image/сумка.webp" alt="Кожаная сумка" class="media-img media-img--square">
+                            <span class="product-card__badge">New</span>
+                        </a>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Кожаная сумка</h3>
+                            <p class="product-card__price">15 600 ₽</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="men">
+                        <a href="#" class="product-card__media">
+                            <img src="image/обувь.webp" alt="Джинсы прямые" class="media-img media-img--square">
+                        </a>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Джинсы прямые</h3>
+                            <p class="product-card__price">6 900 ₽</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-category="accessories">
+                        <a href="#" class="product-card__media">
+                            <img src="image/перчатки.webp" alt="Кашемировый шарф" class="media-img media-img--square">
+                            <span class="product-card__badge product-card__badge--sale">-15%</span>
+                        </a>
+                        <div class="product-card__info">
+                            <h3 class="product-card__name">Кашемировый шарф</h3>
+                            <p class="product-card__price">3 200 ₽</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load more -->
+                <div class="catalog__more">
+                    <button class="btn btn--ghost">Показать ещё</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <a href="index.html" class="logo">MARTELLE</a>
+                <p>Современная одежда для повседневной жизни.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Магазин</h4>
+                <a href="catalog.html">Новинки</a>
+                <a href="catalog.html">Женское</a>
+                <a href="catalog.html">Мужское</a>
+                <a href="catalog.html">Аксессуары</a>
+            </div>
+            <div class="footer__col">
+                <h4>Информация</h4>
+                <a href="#">Доставка</a>
+                <a href="#">Возврат</a>
+                <a href="#">Размеры</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="footer__col">
+                <h4>Соцсети</h4>
+                <a href="#">Instagram</a>
+                <a href="#">Telegram</a>
+                <a href="#">Pinterest</a>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            <p>© 2026 Martelle. Все права защищены.</p>
+            <div class="footer__legal">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Условия использования</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

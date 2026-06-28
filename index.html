@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martelle — Fashion Store</title>
+    <!-- <link rel="preconnect" href="https://api.fontshare.com" crossorigin> -->
+    <!-- <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top announcement bar -->
+    <div class="announcement">
+      <p>
+        Бесплатная доставка при заказе от 5000 ₽ — Возврат в течение 30 дней
+      </p>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+      <div class="container header__inner">
+        <button class="header__burger" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav nav--left">
+          <a href="catalog.html">Магазин</a>
+          <a href="#collections">Коллекции</a>
+          <a href="#about">О нас</a>
+        </nav>
+
+        <a href="#" class="logo">MARTELLE</a>
+
+        <nav class="nav nav--right">
+          <a href="#search" aria-label="Поиск">Поиск</a>
+          <a href="#account" aria-label="Аккаунт">Аккаунт</a>
+          <a href="#cart" class="nav__cart" aria-label="Корзина">Корзина (0)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__media">
+          <img
+            src="image/главная.webp"
+            alt="Новая коллекция Martelle"
+            class="media-img media-img--hero"
+          />
+        </div>
+        <div class="hero__content">
+          <p class="hero__eyebrow">Новая коллекция 2026</p>
+          <h1 class="hero__title">Минимализм в&nbsp;каждой детали</h1>
+          <p class="hero__text">
+            Капсульный гардероб из натуральных материалов для повседневной
+            жизни.
+          </p>
+          <div class="hero__actions">
+            <a href="catalog.html" class="btn btn--primary">В магазин</a>
+            <a href="#collections" class="btn btn--ghost">Смотреть коллекции</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Collections -->
+      <section class="collections" id="collections">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-head__title">Коллекции</h2>
+            <a href="#" class="section-head__link">Смотреть все</a>
+          </div>
+          <div class="collections__grid">
+            <a href="catalog.html" class="collection-card">
+              <img
+                src="image/женское.webp"
+                alt="Женская коллекция"
+                class="media-img media-img--tall"
+              />
+              <span class="collection-card__name">Женское</span>
+            </a>
+            <a href="catalog.html" class="collection-card">
+              <img
+                src="image/мужское.webp"
+                alt="Мужская коллекция"
+                class="media-img media-img--tall"
+              />
+              <span class="collection-card__name">Мужское</span>
+            </a>
+            <a href="catalog.html" class="collection-card">
+              <img
+                src="image/сумка.webp"
+                alt="Аксессуары"
+                class="media-img media-img--tall"
+              />
+              <span class="collection-card__name">Аксессуары</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured products -->
+      <section class="products" id="shop">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-head__title">Хиты продаж</h2>
+            <a href="catalog.html" class="section-head__link">Весь каталог</a>
+          </div>
+          <div class="products__grid">
+            <article class="product-card">
+              <a href="#" class="product-card__media">
+                <img
+                  src="image/пальто.webp"
+                  alt="Пальто Oversize"
+                  class="media-img media-img--square"
+                />
+                <span class="product-card__badge">New</span>
+              </a>
+              <div class="product-card__info">
+                <h3 class="product-card__name">Пальто Oversize</h3>
+                <p class="product-card__price">12 900 ₽</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <a href="#" class="product-card__media">
+                <img
+                  src="image/костюм.webp"
+                  alt="Хлопковая рубашка"
+                  class="media-img media-img--square"
+                />
+              </a>
+              <div class="product-card__info">
+                <h3 class="product-card__name">Хлопковая рубашка</h3>
+                <p class="product-card__price">4 500 ₽</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <a href="#" class="product-card__media">
+                <img
+                  src="image/мужское.webp"
+                  alt="Брюки прямые"
+                  class="media-img media-img--square"
+                />
+                <span class="product-card__badge product-card__badge--sale"
+                  >-20%</span
+                >
+              </a>
+              <div class="product-card__info">
+                <h3 class="product-card__name">Брюки прямые</h3>
+                <p class="product-card__price">6 200 ₽</p>
+              </div>
+            </article>
+            <article class="product-card">
+              <a href="#" class="product-card__media">
+                <img
+                  src="image/свитер.webp"
+                  alt="Трикотажный свитер"
+                  class="media-img media-img--square"
+                />
+              </a>
+              <div class="product-card__info">
+                <h3 class="product-card__name">Трикотажный свитер</h3>
+                <p class="product-card__price">7 800 ₽</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- About / Brand -->
+      <section class="about" id="about">
+        <div class="container about__inner">
+          <div class="about__media">
+            <img
+              src="image/костюм-шёлк.webp"
+              alt="Ателье Martelle"
+              class="media-img media-img--tall"
+            />
+          </div>
+          <div class="about__content">
+            <p class="hero__eyebrow">О бренде</p>
+            <h2 class="about__title">Одежда, созданная чтобы оставаться</h2>
+            <p class="about__text">
+              Мы создаём вещи из качественных материалов с вниманием к деталям и
+              заботой об окружающей среде. Каждая модель — это баланс формы и
+              функции.
+            </p>
+            <a href="#" class="btn btn--primary">Узнать больше</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter">
+        <div class="container newsletter__inner">
+          <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
+          <p class="newsletter__text">
+            Новинки, специальные предложения и приватные распродажи.
+          </p>
+          <form class="newsletter__form" action="#" method="post">
+            <input
+              type="email"
+              class="newsletter__input"
+              placeholder="Ваш email"
+              aria-label="Email"
+              required
+            />
+            <button type="submit" class="btn btn--primary">Подписаться</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="logo">MARTELLE</a>
+          <p>Современная одежда для повседневной жизни.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Магазин</h4>
+          <a href="#">Новинки</a>
+          <a href="#">Женское</a>
+          <a href="#">Мужское</a>
+          <a href="#">Аксессуары</a>
+        </div>
+        <div class="footer__col">
+          <h4>Информация</h4>
+          <a href="#">Доставка</a>
+          <a href="#">Возврат</a>
+          <a href="#">Размеры</a>
+          <a href="#">Контакты</a>
+        </div>
+        <div class="footer__col">
+          <h4>Соцсети</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Telegram</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <p>© 2026 Martelle. Все права защищены.</p>
+        <div class="footer__legal">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Условия использования</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
